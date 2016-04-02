@@ -7,22 +7,22 @@ A simple Python SSH menu in a Docker container.
 ## Configuration
 
 1. Pull the image from Docker Registry:
-```
-docker pull bbania/ssh-gateway
-```
+  ```
+  docker pull bbania/ssh-gateway
+  ```
 2. Create an SSH key with
-```
-ssh-keygen -t rsa -b 4096 -C <your_comment>
-```
+  ```
+  ssh-keygen -t rsa -b 4096 -C <your_comment>
+  ```
 3. Create `ssh_config` file with list of your hosts.
   1.File format:
-```
-Host node1
-  IdentityFile ~/.ssh/id_rsa
-  HostName my.host.ip
-  User user
-  Port 22
-```
+  ```
+  Host node1
+    IdentityFile ~/.ssh/id_rsa
+    HostName my.host.ip
+    User user
+    Port 22
+  ```
 4. Edit menu.py `menu_data` to set menu entries for your hosts
   1. Format:
     * **title** - provides menu title
