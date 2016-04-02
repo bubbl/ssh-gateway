@@ -1,3 +1,5 @@
+[![](https://badge.imagelayers.io/bbania/ssh-gateway:latest.svg)](https://imagelayers.io/?images=bbania/ssh-gateway:latest 'Get your own badge on imagelayers.io')
+
 # SSH Gateway
 
 A simple Python SSH menu in a Docker container.
