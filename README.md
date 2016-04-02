@@ -4,7 +4,7 @@
 
 A simple Python SSH menu in a Docker container.
 
-![alt Gateway Menu](screenshots/gateway.png "Gateway Menu")
+![alt Gateway Menu](https://raw.githubusercontent.com/bubbl/ssh-gateway/master/screenshots/gateway.png "Gateway Menu")
 
 ## Configuration
 
@@ -33,7 +33,7 @@ Host node1
     * **type** (takes either `MENU` or `COMMAND` values):
       * **MENU** - creates a menu entity (requires `subtitle` to be set as well as `options` for submenu)
       * **COMMAND** - executes a shell command
-![alt Gateway Submenu](screenshots/node_menu.png "Submenu")
+![alt Gateway Submenu](https://raw.githubusercontent.com/bubbl/ssh-gateway/master/screenshots/node_menu.png "Submenu")
 
 Example menu_data in menu.py.
 
