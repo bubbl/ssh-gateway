@@ -1,0 +1,4 @@
+*.md
+config
+id_*
+.git*
