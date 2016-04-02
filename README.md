@@ -4,13 +4,19 @@ A simple Python SSH menu in a Docker container.
 
 ## Configuration
 
-1. Create an SSH key with
+1. Pull the image from Docker Registry:
+
+```
+docker pull bbania/ssh-gateway
+```
+
+2. Create an SSH key with
 
 ```
 ssh-keygen -t rsa -b 4096 -C <your_comment>
 ```
 
-2. Create `ssh_config` file with list of your hosts.
+3. Create `ssh_config` file with list of your hosts.
 
 File format:
 
@@ -22,7 +28,7 @@ Host node1
   Port 22
 ```
 
-3. Add the ssh key to remote hosts.
+4. Add the ssh key to remote hosts.
 
 ## Running container
 
