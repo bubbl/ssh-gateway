@@ -2,6 +2,8 @@
 
 A simple Python SSH menu in a Docker container.
 
+![alt Gateway Menu](screenshots/gateway.png "Gateway Menu")
+
 ## Configuration
 
 1. Pull the image from Docker Registry:
@@ -28,7 +30,17 @@ Host node1
   Port 22
 ```
 
-4. Add the ssh key to remote hosts.
+4. Edit menu.py `menu_data` to set menu entries for your hosts
+  1. Format:
+    * **title** - provides menu title
+    * **subtitle** - additional title for menu
+    * **type** (takes either `MENU` or `COMMAND` values):
+      * **MENU** - creates a menu entity (requires `subtitle` to be set as well as `options` for submenu)
+      * **COMMAND** - executes a shell command
+
+![alt Gateway Submenu](screenshots/node_menu.png "Submenu")
+
+5. Add the ssh key to remote hosts.
 
 ## Running container
 
