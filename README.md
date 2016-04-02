@@ -35,7 +35,7 @@ Host node1
       * **COMMAND** - executes a shell command
 ![alt Gateway Submenu](https://raw.githubusercontent.com/bubbl/ssh-gateway/master/screenshots/node_menu.png "Submenu")
 
-Example menu_data in menu.py.
+Example menu_data in [menu.py](https://github.com/bubbl/ssh-gateway/blob/master/menu.py#L20).
 
 * Add the ssh key to remote hosts.
 
