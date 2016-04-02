@@ -1,6 +1,6 @@
 # SSH Gateway
 
-A simple SSH gateway in a Docker container.
+A simple Python SSH menu in a Docker container.
 
 ## Configuration
 
@@ -29,6 +29,9 @@ Host node1
 Pass ssh key and ssh_config to the container as volumes:
 
 ```
-docker run --rm -it -v /path/to/ssh_config:/etc/ssh/ssh_config -v /path/to/ssh-key:/root/.ssh/id_rsa bbania/ssh-gateway
+docker run --rm -it \
+  -v /path/to/ssh_config:/etc/ssh/ssh_config \
+  -v /path/to/ssh-key:/root/.ssh/id_rsa \
+  bbania/ssh-gateway
 ```
 
