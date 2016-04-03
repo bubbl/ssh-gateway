@@ -9,15 +9,20 @@ A simple Python SSH menu in a Docker container.
 ## Configuration
 
 * Pull the image from Docker Registry:
+
 ```
 docker pull bbania/ssh-gateway
 ```
+
 * Create an SSH key with
+
 ```
 ssh-keygen -t rsa -b 4096 -C <your_comment>
 ```
+
 * Create `ssh_config` file with list of your hosts.
   * File format:
+
 ```
 Host node1
   IdentityFile ~/.ssh/id_rsa
@@ -33,6 +38,7 @@ Host node1
     * **type** (takes either `MENU` or `COMMAND` values):
       * **MENU** - creates a menu entity (requires `subtitle` to be set as well as `options` for submenu)
       * **COMMAND** - executes a shell command
+
 ![alt Gateway Submenu](https://raw.githubusercontent.com/bubbl/ssh-gateway/master/screenshots/node_menu.png "Submenu")
 
 Example menu_data in [menu.py](https://github.com/bubbl/ssh-gateway/blob/master/menu.py#L20).
