@@ -6,7 +6,7 @@ RUN apk add --no-cache --update \
     openssh-client \
     && rm -rf /var/cache/apk/*
 
-COPY ./menu.py /
+COPY ./menu.py ./menulist.py /
 
 RUN mkdir /root/.ssh \
     && chmod 700 /root/.ssh/
