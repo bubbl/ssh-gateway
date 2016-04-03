@@ -14,6 +14,10 @@ curses.init_pair(1,curses.COLOR_BLACK, curses.COLOR_GREEN)
 h = curses.color_pair(1)
 n = curses.A_NORMAL
 
+MENU = "menu"
+COMMAND = "command"
+EXITMENU = "exitmenu"
+
 menu_data = menulist.menu_data
 
 def runmenu(menu, parent):
