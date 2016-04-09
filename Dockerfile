@@ -12,3 +12,4 @@ RUN mkdir /root/.ssh \
     && chmod 700 /root/.ssh/
 
 CMD [ "python", "/menu.py" ]
+
